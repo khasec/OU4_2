@@ -10,5 +10,5 @@ int fib(int n)
 }
  
 extern "C"{
-    int fib(int n) {return fib(n);}
+    int fib_cpp(int n) {return fib(n);}
 }

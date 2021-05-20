@@ -2,8 +2,8 @@
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libfib.so')
 
-lib.fib.argtypes = [ctypes.c_int]
-lib.fib.restype = [ctypes.c_int]
+lib.fib_cpp.argtypes = [ctypes.c_int]
+lib.fib_cpp.restype = [ctypes.c_int]
 
 def fib_cpp(n):
-    return lib.fib(n)
+    return lib.fib_cpp(n)

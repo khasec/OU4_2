@@ -37,6 +37,6 @@ end_cpp = pc()
 print(f'Time in seconds {round(end_cpp-start_cpp, 2)}')
 
 plt.plot(n_cpp,time_cpp ,'bo',n_py, time_py,'ro')
-plt.show()
+plt.savefig('fib_c.png')
 
 

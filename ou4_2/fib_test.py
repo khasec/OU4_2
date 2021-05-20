@@ -11,6 +11,7 @@ time_cpp=[]
 n_cpp=[]
 time_py=[]
 n_py=[]
+print('hej')
 for n in range(n1,n2):
 
     print(f'fib(n) for C++ with n={n}' )

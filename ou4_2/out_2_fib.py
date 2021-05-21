@@ -11,7 +11,8 @@ def fib_py(n):
     else:
         return(fib_py(n-1) + fib_py(n-2))
 
-print(Heltal(47).fib())
+k=Heltal(40)
+print(k.fib())
 n1=30
 n2=40
 time_cpp=[]

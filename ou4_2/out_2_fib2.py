@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
-from fib import fib_py
+
 from time import perf_counter as pc
 import matplotlib.pyplot as plt
 from heltal import Heltal
+
+
 
 print(Heltal(47).fib())
 n1=30

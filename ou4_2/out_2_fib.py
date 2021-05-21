@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
 
 from fib_brygg_from_cpp import fib_cpp
 from fib import fib_py
 from time import perf_counter as pc
 import matplotlib.pyplot as plt
-
+from heltal import Heltal
 n1=30
 n2=40
 time_cpp=[]
@@ -14,9 +13,12 @@ n_py=[]
 #hej
 for n in range(n1,n2):
 
+    k=Heltal(n)
+
+
     print(f'fib(n) for C++ with n={n}' )
     start_cpp = pc()
-    print(fib_cpp(n))
+    print(k.fib())
     end_cpp = pc()
     print(f'Time in seconds {round(end_cpp-start_cpp, 2)}')
     time_cpp.append(round(end_cpp-start_cpp, 2))
@@ -39,5 +41,3 @@ print(f'Time in seconds {round(end_cpp-start_cpp, 2)}')
 
 plt.plot(n_cpp,time_cpp ,'bo',n_py, time_py,'ro')
 plt.savefig('fib_c.png')
-
-

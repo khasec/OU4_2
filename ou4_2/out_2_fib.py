@@ -13,7 +13,7 @@ def fib_py(n):
 
 
 n1=30
-n2=40
+n2=45
 time_cpp=[]
 n_cpp=[]
 time_py=[]
@@ -46,4 +46,6 @@ end_cpp = pc()
 print(f'Time in seconds {round(end_cpp-start_cpp, 2)}')
 
 plt.plot(n_cpp,time_cpp ,'bo',n_py, time_py,'ro')
-plt.savefig('fib_c.png')
+plt.xlabel('n')
+plt.ylabel('time in sedonds')
+plt.savefig('fib_c.png_new')

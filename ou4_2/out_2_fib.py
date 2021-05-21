@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 
-from fib import fib_py
 from time import perf_counter as pc
 import matplotlib.pyplot as plt
 from heltal import Heltal
+
+
+def fib_py(n):
+    if n <= 1:
+        return n
+    else:
+        return(fib_py(n-1) + fib_py(n-2))
 
 print(Heltal(47).fib())
 n1=30
@@ -12,7 +18,7 @@ time_cpp=[]
 n_cpp=[]
 time_py=[]
 n_py=[]
-print('hej')
+
 # for n in range(n1,n2):
 
 #     k=Heltal(n)
